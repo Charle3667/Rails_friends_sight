@@ -30,6 +30,10 @@
   <div class='mb-3'>
     <%= form.text_field :git_hub, class:"form-control", placeholder:'GitHub' %>
   </div>
+
+   <div class='mb-3'>
+    <%= form.number_field :user_id, id: :friend_user_id, class:"form-control", value:current_user.id, type: :hidden %>
+  </div>
   <br>
 
   <div>
